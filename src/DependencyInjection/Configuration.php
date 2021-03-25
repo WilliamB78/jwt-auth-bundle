@@ -36,6 +36,7 @@ class Configuration implements ConfigurationInterface
                     ->scalarNode('aud')->defaultValue(true)->end()
                     ->scalarNode('leeway')->defaultValue(60)->end()
                     ->scalarNode('max_age')->defaultValue('')->end()
+                    ->scalarNode('org_id')->defaultValue(false)->end()
                 ->end()
             ->end();
 
